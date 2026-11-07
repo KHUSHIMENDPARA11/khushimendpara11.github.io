@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khushi Mendpara | Data & Marketing Analytics Analyst</title>
+<meta name="description" content="Portfolio of Khushi Mendpara, a data and marketing analytics analyst skilled in Power BI, Microsoft Fabric, SQL, Python and Google Analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F8FB; --panel:#FFFFFF; --ink:#13203A; --muted:#55627A; --line:#DCE3EE;
+  --blue:#2754D6; --amber:#E8A02B; --bar:#E4EAF4;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"Manrope",system-ui,-apple-system,Segoe UI,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1626;--panel:#15203A;--ink:#EAF0FB;--muted:#9BA9C4;--line:#26334F;--blue:#6C93FF;--amber:#F2B445;--bar:#22304E}
+}
+:root[data-theme="dark"]{--bg:#0E1626;--panel:#15203A;--ink:#EAF0FB;--muted:#9BA9C4;--line:#26334F;--blue:#6C93FF;--amber:#F2B445;--bar:#22304E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(rgba(39,84,214,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(39,84,214,.07) 1px,transparent 1px);background-size:40px 40px;color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:17px}
+:root{--motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='700' fill='none' stroke='rgb(39,84,214)' stroke-width='2' opacity='.12'%3E%3Cpath d='M40 520l120-80 100 30 120-140 120 30 140-140 140-70'/%3E%3Ccircle cx='160' cy='440' r='7'/%3E%3Ccircle cx='380' cy='330' r='7'/%3E%3Ccircle cx='640' cy='220' r='7'/%3E%3Crect x='60' y='580' width='34' height='60'/%3E%3Crect x='110' y='550' width='34' height='90'/%3E%3Crect x='160' y='520' width='34' height='120'/%3E%3Crect x='210' y='480' width='34' height='160'/%3E%3Cpath d='M560 430h240l-50 70H610zM610 500h140l-30 60h-80z'/%3E%3Ccircle cx='720' cy='620' r='55'/%3E%3Cpath d='M720 620v-55M720 620l48 28'/%3E%3C/svg%3E")}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--motif) right -80px bottom -60px/760px no-repeat,var(--motif) left -260px top 90px/640px no-repeat}
+section:nth-of-type(even){background:color-mix(in srgb,var(--panel) 60%,transparent)}
+section>.wrap>h2::after{content:"";display:block;width:60px;height:4px;margin-top:10px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--amber))}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+nav b{font-weight:800;letter-spacing:.2px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--ink)}
+#theme{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:20px;padding:5px 12px;font:inherit;font-size:14px;cursor:pointer}
+@media(max-width:720px){nav ul{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0 56px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:44px}}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,66px);line-height:1.05;margin:0 0 18px;letter-spacing:-.5px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:54ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1px solid var(--blue)}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.ghost{color:var(--blue)}
+.btn:hover{transform:translateY(-1px)}
+
+/* impact board: the memorable element */
+.board{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 22px 14px;box-shadow:0 1px 0 var(--line)}
+.board h2{font-size:15px;margin:0 0 4px;font-weight:800}
+.board small{color:var(--muted);display:block;margin-bottom:14px;font-size:13.5px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tabs button{font:inherit;font-size:13.5px;border:1px solid var(--line);background:transparent;color:var(--muted);padding:5px 11px;border-radius:16px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.row{margin:0 0 14px}
+.row .lab{display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px;color:var(--muted)}
+.row .lab strong{color:var(--ink)}
+.track{height:14px;background:var(--bar);border-radius:7px;overflow:hidden}
+.fill{height:100%;width:0;border-radius:7px;background:var(--blue);transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.fill.after{background:var(--amber)}
+.note{font-size:13px;color:var(--muted);margin:6px 0 8px}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-family:var(--serif);font-weight:600;font-size:34px;margin:0 0 24px;letter-spacing:-.3px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.skills dl{margin:0}
+.skills dt{font-weight:800;font-size:14.5px;margin-top:16px}
+.skills dd{margin:6px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:3px 10px;font-size:14px}
+.job{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;padding:24px}
+.job h3{margin:0;font-size:20px}
+.job .meta{color:var(--muted);font-size:15px;margin:2px 0 14px}
+ul.res{margin:0;padding-left:20px}
+ul.res li{margin-bottom:8px}
+.projects{display:grid;gap:20px}
+details.proj{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+details.proj summary{cursor:pointer;list-style:none;padding:20px 24px;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+details.proj summary::-webkit-details-marker{display:none}
+details.proj summary h3{margin:0;font-size:19px}
+details.proj summary span{color:var(--muted);font-size:14px;white-space:nowrap}
+details.proj summary::after{content:"+";font-size:22px;color:var(--blue);margin-left:8px}
+details.proj[open] summary::after{content:"\2212"}
+.proj .body{padding:0 24px 22px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.edu{display:grid;gap:14px}
+.edu div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px}
+.edu b{display:block}
+.edu span{color:var(--muted);font-size:15px}
+.contact p{max-width:56ch;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px}
+/* graphics */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:0 0 56px;overflow:hidden}
+.strip div{padding:22px 22px 20px;border-right:1px solid var(--line)}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:var(--serif);font-size:40px;line-height:1.1;font-weight:600}
+.strip span.t{color:var(--muted);font-size:14px;display:block;margin-top:4px}
+.strip i{display:block;height:3px;width:34px;background:var(--amber);margin-bottom:12px;border-radius:2px}
+@media(max-width:720px){.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border-right:0}.strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:0 0 40px}
+.step{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 16px 18px;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.flow.on .step{opacity:1;transform:none}
+.flow.on .step:nth-child(2){transition-delay:.15s}.flow.on .step:nth-child(3){transition-delay:.3s}.flow.on .step:nth-child(4){transition-delay:.45s}
+.step:not(:last-child)::after{content:"";position:absolute;top:50%;right:-19px;width:18px;border-top:2px dashed var(--blue)}
+.step h3{margin:0 0 2px;font-size:16px}
+.step p{margin:0 0 10px;color:var(--muted);font-size:13.5px;line-height:1.45}
+.step .chip{font-size:12.5px;padding:2px 8px;display:inline-block;margin:0 4px 4px 0}
+.step svg{width:30px;height:30px;margin-bottom:8px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:860px){.flow{grid-template-columns:1fr 1fr}.step::after{display:none}}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 20px}
+.kpis div{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.kpis b{font-family:var(--serif);font-size:28px;font-weight:600;display:block;line-height:1.1}
+.kpis span{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.kpis{grid-template-columns:1fr 1fr}}
+.gfx{display:block;width:100%;height:auto;margin:0 0 16px;background:var(--bg);border:1px solid var(--line);border-radius:8px}
+.gfx .g1{fill:var(--bar)}.gfx .g2{fill:var(--blue)}.gfx .g3{fill:var(--amber)}
+.gfx text{fill:var(--muted);font:11px var(--sans)}
+.gfx .ln{stroke:var(--blue);stroke-width:2;fill:none}
+.gfx .gl{stroke:var(--amber);stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:700;stroke-dashoffset:700}
+.gfx.on .gl{animation:draw 1.8s ease forwards}
+.gfx .bar{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0)}
+.gfx.on .bar{animation:grow .9s ease forwards}
+.gfx .nd{opacity:0}.gfx.on .nd{animation:fade .5s ease forwards}
+.gfx.on .nd:nth-of-type(2){animation-delay:.2s}.gfx.on .nd:nth-of-type(3){animation-delay:.4s}.gfx.on .nd:nth-of-type(4){animation-delay:.6s}.gfx.on .nd:nth-of-type(5){animation-delay:.8s}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes grow{to{transform:scaleY(1)}}@keyframes fade{to{opacity:1}}
+.edu{position:relative;padding-left:26px}
+.edu::before{content:"";position:absolute;left:7px;top:14px;bottom:14px;border-left:2px dashed var(--line)}
+.edu div{position:relative}
+.edu div::before{content:"";position:absolute;left:-26px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:3px solid var(--bg)}
+#copy{font:inherit;font-weight:600;cursor:pointer;background:transparent;color:var(--blue);border:1px solid var(--blue);border-radius:8px;padding:12px 20px}
+.about p{margin:0 0 14px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.fs{fill:var(--panel);stroke:var(--blue);stroke-width:2}
+.gfx .ft{fill:var(--ink);font:700 14px var(--sans)}
+.gfx .fd{fill:var(--muted);font:12px var(--sans)}
+.gfx .mid{text-anchor:middle}
+.gfx.venn{max-width:520px;margin:0 auto 26px}
+.v1{fill:var(--blue);fill-opacity:.2;stroke:var(--blue);stroke-width:2}.v2{fill:var(--amber);fill-opacity:.25;stroke:var(--amber);stroke-width:2}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.three div{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:10px;padding:16px 18px}
+.three b{display:block;margin-bottom:4px}.three p{margin:0;color:var(--muted);font-size:15px}
+@media(max-width:760px){.three{grid-template-columns:1fr}}
+.pars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.par{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--bg);font-size:14.5px}
+.par p{margin:6px 0 0;display:grid;grid-template-columns:52px 1fr}.par span{color:var(--muted);font-size:12.5px;padding-top:2px}
+.par .win{color:var(--blue);font-weight:700}
+@media(max-width:860px){.pars{grid-template-columns:1fr}}
+.role{margin:0 0 14px}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px;margin:0 0 14px}
+.mini div{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg)}
+.mini b{font-family:var(--serif);font-size:24px;display:block;line-height:1.1}.mini span{font-size:12.5px;color:var(--muted)}
+.mbars{margin:0 0 14px}.mrow{margin:0 0 10px;font-size:14px}
+.mrow .lab{display:flex;justify-content:space-between;color:var(--muted)}
+.mrow .tr{height:12px;background:var(--bar);border-radius:6px;overflow:hidden;margin-top:4px}
+.mb{height:100%;width:0;background:var(--blue);border-radius:6px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.mbars.on .mb{width:var(--w)}
+@media (prefers-reduced-motion:reduce){.mb{width:var(--w);transition:none}}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}html{scroll-behavior:auto}.step{opacity:1;transform:none;transition:none}.gfx .gl{stroke-dashoffset:0;animation:none!important}.gfx .bar{transform:none;animation:none!important}.gfx .nd{opacity:1;animation:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <b>Khushi Mendpara</b>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme" type="button" aria-label="Switch light or dark theme">Theme</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1>I turn raw data into marketing decisions.</h1>
+      <p class="lead">Hi, I'm Khushi, a data and marketing analytics analyst in New York. I build Power BI dashboards, automate reporting, and use SQL, Python and Google Analytics to show which campaigns and web pages actually perform.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/khushi-mendpara/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="Khushi_Mendpara_Resume.pdf">Download resume</a>
+      </div>
+    </div>
+
+    <div class="board" id="impact" aria-labelledby="bt">
+      <h2 id="bt">Impact board</h2>
+      <small>Results from my work at UT Dallas. Pick a metric.</small>
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div id="rows"></div>
+      <p class="note" id="note"></p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap"><div class="strip">
+  <div><i></i><b><span class="count" data-to="5" data-suf="+">0</span></b><span class="t">data sources merged into one Power BI model</span></div>
+  <div><i></i><b><span class="count" data-to="20" data-suf="+">0</span></b><span class="t">KPIs tracked across 5+ dashboards</span></div>
+  <div><i></i><b><span class="count" data-to="1" data-suf="M+">0</span></b><span class="t">records processed with Hadoop, Hive and Pig</span></div>
+  <div><i></i><b><span class="count" data-to="500" data-suf="+">0</span></b><span class="t">blockchain transactions analyzed</span></div>
+</div></div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="two">
+      <div class="about">
+        <p>I'm Khushi Mendpara, an analyst in New York who works where marketing and data meet. I build Power BI dashboards, automate reporting workflows, and use SQL, Python and Google Analytics to turn raw data into decisions a team can act on.</p>
+        <p>At the University of Texas at Dallas I improved reporting efficiency, optimized campaign and website performance, and delivered KPI-driven analysis for both business and marketing decisions.</p>
+        <p>I hold two master's degrees, in Information Science and in Management Science, so I can work on the technical side of data and on the business question behind it. I'm now looking for digital marketing analyst and data analyst roles.</p>
+        <div class="facts"><span class="chip">New York</span><span class="chip">Digital marketing analyst</span><span class="chip">Data analyst</span></div>
+      </div>
+      <svg class="gfx" viewBox="0 0 460 280" role="img" aria-label="Marketing funnel showing where my work fits: reach, engage, site experience, decide">
+        <g class="nd"><rect class="fs" x="10" y="0" width="440" height="62" rx="8"/><text class="ft mid" x="230" y="26">Reach</text><text class="fd mid" x="230" y="46">Organic traffic +25% &#183; LinkedIn followers +18%</text></g>
+        <g class="nd"><rect class="fs" x="45" y="72" width="370" height="62" rx="8"/><text class="ft mid" x="230" y="98">Engage</text><text class="fd mid" x="230" y="118">Campaign engagement +15% &#183; Instagram engagement 5%</text></g>
+        <g class="nd"><rect class="fs" x="80" y="144" width="300" height="62" rx="8"/><text class="ft mid" x="230" y="170">Site experience</text><text class="fd mid" x="230" y="190">Bounce rate 80% to 55%</text></g>
+        <g class="nd"><rect class="fs" x="115" y="216" width="230" height="62" rx="8" style="stroke:var(--amber)"/><text class="ft mid" x="230" y="242">Decide</text><text class="fd mid" x="230" y="262">5+ sources, 25% less reporting time</text></g>
+      </svg>
+    </div>
+    <div class="three">
+      <div><b>Dashboards people use</b><p>Power BI, Microsoft Fabric, DAX and Tableau, built around clear KPIs.</p></div>
+      <div><b>Marketing performance</b><p>Google Analytics, SEO, campaign performance and competitor and content analysis.</p></div>
+      <div><b>Automation and AI</b><p>Workflow automation, AI-assisted analysis and predictive analytics.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="flow" aria-label="How I work with data">
+      <div class="step"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><h3>Collect</h3><p>Pull data from websites, platforms and databases.</p><span class="chip">SQL</span><span class="chip">Google Analytics</span><span class="chip">Hadoop</span></div>
+      <div class="step"><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg><h3>Clean and model</h3><p>Fix, validate and shape it into a trusted model.</p><span class="chip">Python</span><span class="chip">Power Query</span><span class="chip">Fabric</span><span class="chip">DAX</span></div>
+      <div class="step"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>Visualize</h3><p>Build dashboards people open every day.</p><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Excel</span></div>
+      <div class="step"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg><h3>Decide</h3><p>Turn numbers into campaign and business actions.</p><span class="chip">KPI reporting</span><span class="chip">SEO</span><span class="chip">Predictive analytics</span></div>
+    </div>
+    <div class="two skills">
+      <dl>
+        <dt>Business intelligence</dt>
+        <dd><span class="chip">Power BI</span><span class="chip">Microsoft Fabric</span><span class="chip">Tableau</span><span class="chip">Excel</span></dd>
+        <dt>Programming</dt>
+        <dd><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">DAX</span><span class="chip">Power Query</span></dd>
+        <dt>Marketing analytics</dt>
+        <dd><span class="chip">Google Analytics</span><span class="chip">Campaign performance</span><span class="chip">SEO optimization</span><span class="chip">Competitor and content analytics</span></dd>
+      </dl>
+      <dl>
+        <dt>Data analytics</dt>
+        <dd><span class="chip">Data modeling</span><span class="chip">Dashboard development</span><span class="chip">KPI reporting</span><span class="chip">Data visualization</span><span class="chip">Statistical analysis</span><span class="chip">Data cleaning</span><span class="chip">Data validation</span><span class="chip">Data mining</span></dd>
+        <dt>AI and automation</dt>
+        <dd><span class="chip">AI-assisted analysis</span><span class="chip">Predictive analytics</span><span class="chip">Workflow automation</span></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <svg class="gfx" viewBox="0 0 960 190" role="img" aria-label="Timeline of roles and projects, 2024 to 2026" style="margin-bottom:22px">
+      <g style="stroke:var(--line)"><path d="M200 22V176M496 22V176M792 22V176"/></g>
+      <text x="206" y="16">2024</text><text x="502" y="16">2025</text><text x="798" y="16">2026</text>
+      <text x="8" y="52">Big Data Analytics</text><text x="8" y="88">Blockchain Research</text><text x="8" y="124">Marketing Analytics, UT Dallas</text><text x="8" y="160">Roshani Jewel dashboard</text>
+      <g class="nd"><rect class="g2" x="249" y="36" width="74" height="22" rx="4"/><text x="331" y="52">Mar to May 2024</text></g>
+      <g class="nd"><rect class="g2" x="274" y="72" width="74" height="22" rx="4"/><text x="356" y="88">Apr to Jun 2024</text></g>
+      <g class="nd"><rect class="g3" x="373" y="108" width="419" height="22" rx="4"/><text x="800" y="124">Aug 2024 to Dec 2025</text></g>
+      <g class="nd"><rect class="g2" x="891" y="144" width="25" height="22" rx="4"/><text x="880" y="160" style="text-anchor:end">May 2026</text></g>
+    </svg>
+    <article class="job">
+      <h3>Marketing Analytics Analyst, Digital Marketing and Campaign Analytics</h3>
+      <p class="meta">University of Texas at Dallas | Insight Global (Atlanta) &middot; Aug 2024 to Dec 2025</p>
+      <div class="kpis">
+        <div><b><span class="count" data-to="25" data-pre="-" data-suf="%">0</span></b><span>reporting time</span></div>
+        <div><b><span class="count" data-to="55" data-suf="%">0</span></b><span>bounce rate, down from 80%</span></div>
+        <div><b><span class="count" data-to="25" data-pre="+" data-suf="%">0</span></b><span>organic traffic</span></div>
+        <div><b><span class="count" data-to="15" data-pre="+" data-suf="%">0</span></b><span>campaign engagement</span></div>
+      </div>
+      <ul class="res">
+        <li>Cut reporting time by 25% by consolidating 5+ data sources into one Power BI model.</li>
+        <li>Reduced bounce rate from 80% to 55% and grew organic traffic by 25% through SQL-driven site optimization.</li>
+        <li>Lifted campaign engagement by 15%, grew Instagram engagement to 5% and LinkedIn followers by 18%, by strengthening content strategy with competitor and content analytics.</li>
+      </ul>
+<div class="pars">
+        <div class="par"><b>Reporting</b><p><span>Start</span>5+ separate data sources</p><p><span>Action</span>One unified Power BI model</p><p class="win"><span>Result</span>25% less reporting time</p></div>
+        <div class="par"><b>Website</b><p><span>Start</span>80% bounce rate</p><p><span>Action</span>SQL-driven site optimization</p><p class="win"><span>Result</span>55% bounce, +25% organic traffic</p></div>
+        <div class="par"><b>Content and social</b><p><span>Start</span>Content strategy to strengthen</p><p><span>Action</span>Competitor and content analytics</p><p class="win"><span>Result</span>+15% engagement, Instagram 5%, LinkedIn +18%</p></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <details class="proj" open>
+        <summary><h3>Roshani Jewel: Business Analytics Dashboard</h3><span>May 2026</span></summary>
+        <div class="body">
+          <svg class="gfx" viewBox="0 0 520 120" role="img" aria-label="Sketch of a dashboard with KPI tiles, bars and a trend line">
+            <rect class="g1" x="8" y="8" width="96" height="34" rx="6"/><rect class="g1" x="112" y="8" width="96" height="34" rx="6"/><rect class="g1" x="216" y="8" width="96" height="34" rx="6"/>
+            <text x="18" y="29">Sales</text><text x="122" y="29">Profit</text><text x="226" y="29">Inventory</text>
+            <rect class="bar g2" x="340" y="60" width="22" height="50"/><rect class="bar g2" x="372" y="40" width="22" height="70"/><rect class="bar g2" x="404" y="52" width="22" height="58"/><rect class="bar g3" x="436" y="24" width="22" height="86"/><rect class="bar g2" x="468" y="46" width="22" height="64"/>
+            <path class="gl" d="M10 100 C60 90 90 70 140 78 S220 50 270 56 S320 70 330 40"/>
+          </svg>
+          <p class="role"><b>Role:</b> Data Analyst. <b>Goal:</b> give Roshani Jewel one trusted, live view of sales, profitability, inventory and marketing.</p>
+          <div class="mini"><div><b>20+</b><span>KPIs tracked</span></div><div><b>5+</b><span>interactive dashboards</span></div><div><b>4</b><span>business areas in one model</span></div></div>
+          <div class="tags"><span class="chip">Microsoft Fabric</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
+          <ul class="res">
+            <li>Improved data accuracy by engineering a Microsoft Fabric and Power BI semantic data model.</li>
+            <li>Gave live visibility into sales, profitability, inventory and marketing with 20+ KPIs across 5+ interactive dashboards, using a central Power BI reporting layer with DAX measures.</li>
+            <li>Surfaced top-performing products and inventory risk areas by applying data modeling and statistical analysis to multi-source transaction data.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="proj">
+        <summary><h3>Big Data Analytics and Predictive Modeling</h3><span>Mar to May 2024</span></summary>
+        <div class="body">
+          <svg class="gfx" viewBox="0 0 520 90" role="img" aria-label="Pipeline from 1M+ records through Hadoop, Hive and Pig to Tableau">
+            <g class="nd"><rect class="g1" x="6" y="22" width="96" height="46" rx="8"/><text x="22" y="49">1M+ records</text></g>
+            <g class="nd"><rect class="g2" x="134" y="22" width="84" height="46" rx="8"/><text x="160" y="49" style="fill:#fff">Hadoop</text></g>
+            <g class="nd"><rect class="g2" x="250" y="22" width="70" height="46" rx="8"/><text x="274" y="49" style="fill:#fff">Hive</text></g>
+            <g class="nd"><rect class="g2" x="352" y="22" width="60" height="46" rx="8"/><text x="374" y="49" style="fill:#fff">Pig</text></g>
+            <g class="nd"><rect class="g3" x="444" y="22" width="70" height="46" rx="8"/><text x="458" y="49" style="fill:#13203A">Tableau</text></g>
+            <path class="ln" d="M102 45h32M218 45h32M320 45h32M412 45h32"/>
+          </svg>
+          <p class="role"><b>Role:</b> Big Data Analytics Specialist. <b>Goal:</b> find risk in large customer data and show it clearly to decision makers.</p>
+          <div class="mbars"><div class="mrow"><div class="lab"><span>Operational efficiency</span><span>+30%</span></div><div class="tr"><div class="mb" style="--w:30%"></div></div></div></div>
+          <div class="mini"><div><b>1M+</b><span>records processed</span></div><div><b>15+</b><span>high-risk segments found</span></div><div><b>10</b><span>geographic hotspots</span></div><div><b>5+</b><span>Tableau dashboards</span></div></div>
+          <div class="tags"><span class="chip">Hadoop</span><span class="chip">Hive</span><span class="chip">Pig</span><span class="chip">Tableau</span><span class="chip">Spatial analysis</span></div>
+          <ul class="res">
+            <li>Improved operational efficiency by 30% by processing 1M+ records through Hadoop, Hive and Pig pipelines.</li>
+            <li>Identified 15+ high-risk customer segments and 10 geographic hotspots using predictive modeling and spatial analysis.</li>
+            <li>Built 5+ interactive Tableau dashboards that visualized risk trends and KPI performance for stakeholders.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="proj">
+        <summary><h3>Blockchain Data and Supply Chain Research</h3><span>Apr to Jun 2024</span></summary>
+        <div class="body">
+          <svg class="gfx" viewBox="0 0 520 90" role="img" aria-label="Five linked blocks representing supply chain stages on a blockchain">
+            <g class="nd"><rect class="g2" x="8" y="20" width="76" height="40" rx="6"/><text x="22" y="45" style="fill:#fff">Stage 1</text></g>
+            <g class="nd"><rect class="g2" x="116" y="20" width="76" height="40" rx="6"/><text x="130" y="45" style="fill:#fff">Stage 2</text></g>
+            <g class="nd"><rect class="g2" x="224" y="20" width="76" height="40" rx="6"/><text x="238" y="45" style="fill:#fff">Stage 3</text></g>
+            <g class="nd"><rect class="g2" x="332" y="20" width="76" height="40" rx="6"/><text x="346" y="45" style="fill:#fff">Stage 4</text></g>
+            <g class="nd"><rect class="g3" x="440" y="20" width="72" height="40" rx="6"/><text x="452" y="45" style="fill:#13203A">Stage 5+</text></g>
+            <path class="ln" d="M84 40h32M192 40h32M300 40h32M408 40h32"/>
+            <text x="8" y="82">500+ transactions traced end to end</text>
+          </svg>
+          <p class="role"><b>Role:</b> Blockchain Research Analyst. <b>Goal:</b> make supply chain records traceable and harder to counterfeit.</p>
+          <div class="mbars"><div class="mrow"><div class="lab"><span>Record reliability (estimated)</span><span>+85%</span></div><div class="tr"><div class="mb" style="--w:85%"></div></div></div><div class="mrow"><div class="lab"><span>Counterfeit risk</span><span>-60%</span></div><div class="tr"><div class="mb" style="--w:60%"></div></div></div></div>
+          <div class="mini"><div><b>500+</b><span>transactions analyzed</span></div><div><b>5+</b><span>supply chain stages</span></div><div><b>DApp</b><span>with smart contract checks</span></div></div>
+          <div class="tags"><span class="chip">Ethereum</span><span class="chip">Smart contracts</span><span class="chip">GitHub</span></div>
+          <ul class="res">
+            <li>Analyzed 500+ blockchain transactions across 5+ supply chain stages, raising estimated record reliability by 85% and cutting counterfeit risk by 60%.</li>
+            <li>Developed a decentralized application (DApp) with smart contract performance checks to strengthen transparency and validation.</li>
+            <li>Kept code reliable with version-controlled commits and documented logic on GitHub.</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <svg class="gfx venn" viewBox="0 0 520 170" role="img" aria-label="Information Science and Management Science overlap in marketing and data analytics">
+      <circle class="v1" cx="215" cy="85" r="80"/><circle class="v2" cx="305" cy="85" r="80"/>
+      <text class="ft mid" x="170" y="82">Information</text><text class="ft mid" x="170" y="100">Science</text>
+      <text class="ft mid" x="350" y="82">Management</text><text class="ft mid" x="350" y="100">Science</text>
+      <text class="fd mid" x="260" y="76">Marketing</text><text class="fd mid" x="260" y="90">and data</text><text class="fd mid" x="260" y="104">analytics</text>
+    </svg>
+    <div class="edu">
+      <div><b>Master of Information Science</b><span>The University of Texas at Dallas, Dallas, Texas</span><p style="margin:8px 0 0;font-size:15px">The data and technology side of my work, seen in my SQL, big data and blockchain analytics projects.</p></div>
+      <div><b>Master of Management Science</b><span>Faulkner University, Montgomery, Alabama</span><p style="margin:8px 0 0;font-size:15px">The business side of my work: turning analysis into KPI reporting and marketing decisions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm looking for digital marketing analyst and data analyst roles. If you have a team that needs clearer reporting and sharper campaign insight, I'd like to hear from you.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:khushimendpara11@gmail.com">Email me</a>
+      <button id="copy" type="button">Copy email</button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/khushi-mendpara/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="yr"></span> Khushi Mendpara &middot; New York</div></footer>
+
+<script>
+const metrics = [
+  {name:"Bounce rate", rows:[["Before",80,"80%",""],["After",55,"55%","after"]], note:"Bounce rate fell from 80% to 55% after SQL-driven site optimization."},
+  {name:"Organic traffic", rows:[["Baseline",100,"100%",""],["After",125,"+25%","after"]], note:"Organic traffic grew 25%. Bars are scaled to a baseline of 100."},
+  {name:"Reporting time", rows:[["Before",100,"100%",""],["After",75,"-25%","after"]], note:"Reporting time dropped 25% by merging 5+ sources into one Power BI model. Bars are scaled to a baseline of 100."},
+  {name:"Engagement", rows:[["Campaigns",15,"+15%",""],["LinkedIn followers",18,"+18%","after"]], note:"Campaign engagement rose 15% and LinkedIn followers grew 18%."}
+];
+const tabs=document.getElementById("tabs"), rows=document.getElementById("rows"), note=document.getElementById("note");
+function show(i){
+  [...tabs.children].forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+  const m=metrics[i], max=Math.max(...m.rows.map(r=>r[1]),100)*(i===3?0.3:1)*1;
+  rows.innerHTML=m.rows.map(r=>'<div class="row"><div class="lab"><span>'+r[0]+'</span><strong>'+r[2]+'</strong></div><div class="track"><div class="fill '+r[3]+'" data-w="'+(i===3?r[1]*3.2:r[1]/1.25)+'"></div></div></div>').join("");
+  note.textContent=m.note;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    rows.querySelectorAll(".fill").forEach(f=>f.style.width=Math.min(100,f.dataset.w)+"%");
+  }));
+}
+metrics.forEach((m,i)=>{
+  const b=document.createElement("button");
+  b.type="button"; b.textContent=m.name; b.setAttribute("role","tab");
+  b.onclick=()=>show(i); tabs.appendChild(b);
+});
+show(0);
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return; io.unobserve(e.target); const t=e.target;
+  if(t.classList.contains("count")){
+    const to=+t.dataset.to,pre=t.dataset.pre||"",suf=t.dataset.suf||"";
+    if(matchMedia("(prefers-reduced-motion: reduce)").matches){t.textContent=pre+to+suf;return}
+    const s=performance.now();
+    (function f(n){const p=Math.min(1,(n-s)/1300);t.textContent=pre+Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f)})(s);
+  } else t.classList.add("on");
+}),{threshold:.35});
+document.querySelectorAll(".count,.gfx,.flow,.mbars").forEach(el=>io.observe(el));
+document.querySelectorAll("details.proj").forEach(d=>d.addEventListener("toggle",()=>{
+  d.querySelectorAll(".gfx").forEach(g=>{g.classList.remove("on");void g.getBoundingClientRect();g.classList.add("on")});
+}));
+const cp=document.getElementById("copy");
+cp.onclick=async()=>{try{await navigator.clipboard.writeText("khushimendpara11@gmail.com");cp.textContent="Copied";setTimeout(()=>cp.textContent="Copy email",1800)}catch(e){cp.textContent="khushimendpara11@gmail.com"}};
+document.getElementById("yr").textContent=new Date().getFullYear();
+const root=document.documentElement;
+document.getElementById("theme").onclick=()=>{
+  const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme=dark?"light":"dark";
+};
+</script>
+</body>
+</html>
